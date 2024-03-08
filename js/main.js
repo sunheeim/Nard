@@ -14,9 +14,9 @@ $(function () {
     });
 
     /* 링크 방지 */
-    $('a').click(function (e) {
+    /* $('a').click(function (e) {
         e.preventDefault();
-    });
+    }); */
 
     let depth01 = $('.header .inner .gnb-pc .depth01');
     let depth02 = $('.header .inner .gnb-pc .depth02');

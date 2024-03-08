@@ -36,13 +36,21 @@
 .sub01_nav .inner .title h4 {
   font-weight: normal;
 }
-.sub01_nav .inner nav .gnb {
+.sub01_nav .inner nav {
   position: relative;
+}
+.sub01_nav .inner nav .gnb {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
+.sub01_nav .inner nav .gnb .depth01.on {
+  text-underline-offset: 10px;
+  -webkit-text-decoration: underline 2px #333;
+          text-decoration: underline 2px #333;
+}
 .sub01_nav .inner nav .gnb .depth01 > a {
+  position: relative;
   font-family: var(--font-en);
   font-size: 2.5rem;
   line-height: 80px;
@@ -54,8 +62,8 @@
   line-height: 80px;
   position: absolute;
   top: 80px;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
 }
 .sub01_nav .inner nav .gnb .depth01 .depth02.on {
   display: flex;
