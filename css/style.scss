@@ -450,32 +450,6 @@
                 object-fit: cover;
             }
         }
-
-        .marquee {
-            position: relative;
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            box-sizing: content-box;
-
-            .marquee-cont {
-                display: inline-flex;
-                white-space: nowrap;
-                padding-right: 100%;
-                box-sizing: content-box;
-                animation: marquee 120s linear infinite;
-
-                .item {
-                    display: block;
-                    width: 17vw;
-
-                    img {
-                        width: 100%;
-                        vertical-align: top;
-                    }
-                }
-            }
-        }
     }
 }
 
