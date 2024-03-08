@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나드 NARD</title>
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="inner">
+                <h1>
+                    <a href="#"><img src="img/NARD_logo.png" alt="NARDlogo"></a>
+                </h1>
+                <nav class="gnb-pc pc">
+                    <ul class="gnb">
+                        <li class="depth01">
+                            <a href="#">NEW</a>
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">BEST</a>
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">CATEGORY</a>
+                            <ul class="depth02">
+                                <li><a href="#">SKIN CARE</a></li>
+                                <li><a href="#">ORAL CARE</a></li>
+                                <li><a href="#">HIRE</a></li>
+                                <li><a href="#">BODY</a></li>
+                                <li><a href="#">BABY</a></li>
+                                <li><a href="#">LIFE STYLE</a></li>
+                            </ul><!-- .depth02 end -->
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">COLLECTION</a>
+                            <ul class="depth02">
+                                <li><a href="#">SET</a></li>
+                                <li><a href="#">GIFT</a></li>
+                                <li><a href="#">TRAVEL</a></li>
+                            </ul><!-- .depth02 end -->
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">SALE</a>
+                        </li><!-- .depth01 end -->
+                    </ul><!-- .gnb end -->
+                </nav><!-- .gnb-pc end -->
+                <div class="util">
+                    <button class="user pc">
+                        <img src="img/user_icon.png" alt="마이페이지">
+                    </button><!-- .search end -->
+                    <button class="cart pc">
+                        <img src="img/bag_icon.png" alt="장바구니">
+                    </button><!-- .user end -->
+                    <button class="search">
+                        <img src="img/search_icon.png" alt="검색">
+                    </button><!-- .cart end -->
+                    <button class="menu_btn mobile">
+                        <img src="img/menu_icon.png" alt="메뉴보기">
+                    </button><!-- .mobile-btn end -->
+                </div><!-- .util end -->
+
+                <div class="search_box">
+                    <div class="search_box_inner">
+                        <input type="text" placeholder="검색어를 입력해주세요">
+                        <img src="img/icon _search_W.png" alt="검색">
+                    </div><!-- .search_box_inner end -->
+                </div><!-- .search_box end -->
+
+                <nav class="gnb-moblie moblie">
+                    <div class="gnb">
+                        <ul class="gnb01">
+                            <li class="depth01"><a href="#">LOG IN</a></li>
+                            <li class="depth01"><a href="#">JOIN</a></li>
+                            <li class="depth01"><a href="#">MY PAGE</a></li>
+                            <li class="depth01"><a href="#">MY ORDER</a></li>
+                        </ul><!-- .gnb01 end -->
+                        <ul class="gnb02">
+                            <li class="depth01">
+                                <a href="#">NEW</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">BEST</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">CATEGORY</a>
+                                <ul class="depth02">
+                                    <li><a href="#">SKIN CARE</a></li>
+                                    <li><a href="#">ORAL CARE</a></li>
+                                    <li><a href="#">HIRE</a></li>
+                                    <li><a href="#">BODY</a></li>
+                                    <li><a href="#">BABY</a></li>
+                                    <li><a href="#">LIFE STYLE</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">COLLECTION</a>
+                                <ul class="depth02">
+                                    <li><a href="#">SET</a></li>
+                                    <li><a href="#">GIFT</a></li>
+                                    <li><a href="#">TRAVEL</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">SALE</a>
+                            </li><!-- .depth01 end -->
+                        </ul><!-- .gnb02 end -->
+                    </div><!-- .gnb end -->
+                    <button class="close-btn mobile">
+                        <img src="img/icon_close.png" alt="메뉴닫기">
+                    </button><!-- .menu_btn end -->
+                </nav><!-- .gnb-moblie end -->
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+        <main id="main">
+            <section class="main_visual">
+                <figure>
+                    <img class="pc_main pc" src="img/pc_main_bg.png" alt="메인비주얼">
+                    <img class="moblie-420 mobile_main_visual mobile" src="img/mobile_main_bg.png" alt="메인비주얼">
+                </figure>
+                <h5>HIMALAYA NARD</h5>
+            </section><!-- .main_visual end -->
+            <div class="kakao_btn">
+                <figure class="btn">
+                    <a href="#">
+                        <img src="img/kakaotalkCH+.png" alt="카카오톡채널추가">
+                    </a>
+                    <a href="#">
+                        <img src="img/kakaotalk.png" alt="카카오톡상담">
+                    </a>
+                </figure><!-- .btn end -->
+            </div><!-- .kakao_btn end -->
+
+            <section class="section01 bestproduct">
+                <div class="inner">
+                    <h4 class="mob_title">Best Product</h4>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <h4 class="pc_title">Best Product</h4>
+                                    <div class="text">
+                                        <h2>Vita Bomb<br />
+                                            Brightning Toner</h2>
+                                        <p>나드 비타 밤 브라이트닝 토너 200ml</p>
+                                        <div>
+                                            <span>22,000원</span>
+                                            <strong>15,900원</strong>
+                                        </div>
+                                    </div><!-- .text end -->
+                                    <div class="best_btn">
+                                        <a href="#">SHOP NOW</a>
+                                    </div><!-- .best_btn end -->
+                                </div><!-- .item end -->
+                                <div class="product">
+                                    <figure>
+                                        <img src="img/best01.png" alt="비타밤브라이트닝토너">
+                                    </figure>
+                                </div><!-- .product end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <h4 class="pc_title">Best Product</h4>
+                                    <div class="text">
+                                        <h2>Damege RX<br />
+                                            Treatment</h2>
+                                        <p>나드 데미지 RX 트리트먼트 500ml</p>
+                                        <div>
+                                            <span>30,000원</span>
+                                            <strong>19,900원</strong>
+                                        </div>
+                                    </div><!-- .text end -->
+                                    <div class="best_btn">
+                                        <a href="#">SHOP NOW</a>
+                                    </div><!-- .best_btn end -->
+                                </div><!-- .item end -->
+                                <div class="product">
+                                    <figure>
+                                        <img src="img/best02.png" alt="데미지RX트리트먼트">
+                                    </figure>
+                                </div><!-- .product end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <h4 class="pc_title">Best Product</h4>
+                                    <div class="text">
+                                        <h2>Damege RX<br />
+                                            Shampoo</h2>
+                                        <p>나드 데미지 RX 샴푸 500ml</p>
+                                        <div>
+                                            <span>26,000원</span>
+                                            <strong>17,900원</strong>
+                                        </div>
+                                    </div><!-- .text end -->
+                                    <div class="best_btn">
+                                        <a href="#">SHOP NOW</a>
+                                    </div><!-- .best_btn end -->
+                                </div><!-- .item end -->
+                                <div class="product">
+                                    <figure>
+                                        <img src="img/best03.png" alt="데미지RX샴푸">
+                                    </figure>
+                                </div><!-- .product end -->
+                            </div><!-- .swiper-slide end -->
+
+                            <div class="swiper-slide">
+                                <div class="item">
+                                    <h4 class="pc_title">Best Product</h4>
+                                    <div class="text">
+                                        <h2>Damege RX<br />
+                                            Intensive Treatment</h2>
+                                        <p>나드 데미지 RX 인텐시브 트리트먼트 180ml</p>
+                                        <div>
+                                            <span>26,000원</span>
+                                            <strong>17,000원</strong>
+                                        </div>
+                                    </div><!-- .item end -->
+                                    <div class="best_btn">
+                                        <a href="#">SHOP NOW</a>
+                                    </div><!-- .best_btn end -->
+                                </div><!-- .text end -->
+                                <div class="product">
+                                    <figure>
+                                        <img src="img/best04.png" alt="데미지RX인텐시브트리트먼트">
+                                    </figure>
+                                </div><!-- .product end -->
+                            </div><!-- .swiper-slide end -->
+
+                        </div><!-- .swiper-wrapper end -->
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+
+                    </div><!-- .swiper mySwiper end -->
+                </div><!-- .inner end -->
+            </section><!-- .section01 end -->
+
+            <section class="section02">
+                <div class="inner">
+                    <div class="cont">
+                        <figure>
+                            <img src="img/Section02_1_BrandStory.png" alt="브랜드스토리">
+                        </figure>
+                        <div class="item">
+                            <div class="text">
+                                <h4>Brand Story</h4>
+                                <p>브랜드 스토리</p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">GO TO LINK</a>
+                            </div><!-- .btn end -->
+                        </div><!-- .item end -->
+                    </div><!-- .cont end -->
+                    <div class="cont">
+                        <figure>
+                            <img src="img/Section02_2_Mdspick.png" alt="MDPICK">
+                        </figure>
+                        <div class="item">
+                            <div class="text">
+                                <h4>MD's Pick</h4>
+                                <p>퓨어한 성분에 착한 가격까지</p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">GO TO LINK</a>
+                            </div><!-- .btn end -->
+                        </div><!-- .item end -->
+                    </div><!-- .cont end -->
+                    <div class="cont">
+                        <figure>
+                            <img src="img/Section02_3_set.png" alt="세트">
+                        </figure>
+                        <div class="item">
+                            <div class="text">
+                                <h4>Set</h4>
+                                <p>자주 쓰는 제품을 쟁여두세요</p>
+                            </div>
+                            <div class="btn">
+                                <a href="#">GO TO LINK</a>
+                            </div><!-- .btn end -->
+                        </div><!-- .item end -->
+                    </div><!-- .cont end -->
+                </div><!-- .inner end -->
+            </section><!-- .section02 end -->
+
+            <section class="section03">
+                <div class="inner">
+                    <h4>New Arrival</h4>
+                    <div class="list_wrap">
+                        <div class="list">
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/Section03_1.png" alt="모공팩">
+                                        <img src="img/Section03_1_hover.png" alt="모공팩호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Deep Clean<br />
+                                        Tifhtening Pore Pack
+                                    </h2>
+                                    <p>나드 딥 클린 타이트닝 모공팩 150g</p>
+                                    <strong>20,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/Section03_2.png" alt="워터트리트먼트">
+                                        <img src="img/Section03_2_hover.png" alt="워터트리트먼트호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Damege RX<br />
+                                        Water Treatment
+                                    </h2>
+                                    <p>나드 데미지 RX 워터 트리트먼트 150ml</p>
+                                    <strong>26,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/Section03_3.png" alt="클렌징폼">
+                                        <img src="img/Section03_3_hover.png" alt="클렌징폼호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Micro Whip<br />
+                                        Deep Cleansing Form
+                                    </h2>
+                                    <p>나드 마이크로 휩 딥 클렌징폼 150ml</p>
+                                    <strong>8,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/Section03_4.png" alt="립앤아이리무버패드">
+                                        <img src="img/Section03_4_hover.png" alt="립앤아이리무버패드호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Deep Clear Lip&Eye<br />
+                                        Remover Pad
+                                    </h2>
+                                    <p>나드 딥 클리어 립앤아이 리무버 패드</p>
+                                    <strong>20,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+                        </div><!-- .list end -->
+                    </div><!-- .list_wrap end -->
+                </div><!-- .inner end -->
+            </section><!-- .secntion03 end -->
+
+            <section class="section04">
+                <div class="inner">
+                    <div class="list_pc pc">
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_1.png" alt="비타세럼">
+                                <img src="img/Section04_1_hover.png" alt="비타세럼호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/Section04_2.png" alt="letterN">
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_3.png" alt="비타토너">
+                                <img src="img/Section04_3_hover.png" alt="비타토너호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_4.png" alt="헤어에센스">
+                                <img src="img/Section04_4_hover.png" alt="헤어에센스호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_5.png" alt="헤어에센스">
+                                <img src="img/Section04_5_hover.png" alt="헤어에센스호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <img src="img/Section04_6.png" alt="letterA">
+                        </figure>
+                        <figure>
+                            <img src="img/Section04_7.png" alt="letterR">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_8.png" alt="헤어크림">
+                                <img src="img/Section04_8_hover.png" alt="헤어크림호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_9.png" alt="헤어오일">
+                                <img src="img/Section04_9_hover.png" alt="헤어오일호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/section04_blank.png" alt="blank">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_10.png" alt="헤어오일">
+                                <img src="img/Section04_10_hover.png" alt="헤어오일호버">
+                            </a>
+                        </figure>
+                        <figure>
+                            <img src="img/Section04_11.png" alt="letterD">
+                        </figure>
+                        <figure>
+                            <a href="#">
+                                <img src="img/Section04_12.png" alt="콜라겐크림">
+                                <img src="img/Section04_12_hover.png" alt="콜라겐크림호버">
+                            </a>
+                        </figure>
+                    </div><!-- .list_pc end -->
+
+                    <div class="list_moblie">
+                        <div class="cont">
+                            <figure>
+                                <img src="img/Section04_4.png" alt="헤어에센스">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_2_hover.png" alt="letterN">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_6_hover.png" alt="letterA">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_8.png" alt="헤어크림">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_12.png" alt="콜라겐크림">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_7.png" alt="letterR">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_11.png" alt="letterD">
+                            </figure>
+                            <figure>
+                                <img src="img/Section04_1.png" alt="비타세럼">
+                            </figure>
+                        </div>
+                        <div class="sec04_img">
+                            <figure>
+                                <img src="img/mob_section04_9.png" alt="나드괄사">
+                            </figure>
+                        </div><!-- .sec04_img end -->
+                    </div><!-- .list_moblie end -->
+                </div><!-- .inner end -->
+            </section><!-- .secntion04 end -->
+
+            <section class="section05">
+                <div class="inner">
+                    <div class="mob_title">
+                        <p>Cinnamon & Phytoncide</p>
+                        <h4>NARD<br />ROOM SPRAY SET</h4>
+                    </div><!-- .mob_title end -->
+                    <div class="sec05_video" style="width:66.25%; height: 36.08vw;">
+                        <iframe
+                            src="https://player.vimeo.com/video/824985642?muted=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;autopause=0&amp;background=1"
+                            width="954" height="535" frameborder="0" allowfullscreen data-fullscreeneo=""
+                            allow="autoplay; fullscreen; picture-in-picture">
+                        </iframe>
+                    </div><!-- .sec05_video end -->
+                    <div class="item">
+                        <div class="pc_title">
+                            <p>Cinnamon & Phytoncide</p>
+                            <h4>NARD<br />ROOM SPRAY SET</h4>
+                        </div><!-- .mob_title end -->
+                        <figure>
+                            <a href="#"><img src="img/section05.png" alt="룸스프레이세트"></a>
+                        </figure>
+                        <strong>
+                            AROMA THERAPY HIMALAYA HERB NARD
+                        </strong>
+                    </div><!-- .item end -->
+                </div><!-- .inner end -->
+            </section><!-- .section05 end -->
+
+            <section class="section06">
+                <div class="inner">
+                    <figure class="sec06_pc">
+                        <img src="img/section06_img.png" alt="강인한생명력나드">
+                    </figure>
+                    <figure class="sec06_mob mobile">
+                        <img src="img/section06_img_mob.png" alt="강인한생명력나드">
+                    </figure>
+                    <div class="marquee">
+                        <div class="marquee-cont">
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                        </div><!-- .marquee cont -->
+                    </div><!-- .marquee end -->
+                </div><!-- .inner -->
+            </section><!-- .section06 end -->
+        </main><!-- #main end -->
+
+
+        <footer class="footer" id="footer">
+            <div class="footer_inner">
+                <figure>
+                    <img src="img/NARD_logo.png" alt="나드로고">
+                </figure>
+                <div class="footer_info">
+
+                    <div class="cs">
+                        <strong>CS CENTER</strong>
+                        <h3><a href="tel:1899-9811">1899-9811</a></h3>
+                        <ul>
+                            <li>E-MAIL : nard@grunamu.com</li>
+                            <li>평일 AM10:00~PM05:00</li>
+                            <li>점심 PM01:00~PM02:00</li>
+                            <li>토/일/공휴일 휴무</li>
+                        </ul>
+                    </div><!-- .cs end -->
+
+                    <div class="bank">
+                        <strong>BANK INFO</strong>
+                        <ul>
+                            <li>신한은행 100-031-009385</li>
+                            <li>예금주. (주)브리드비인터내셔널</li>
+                        </ul>
+                        <div class="util">
+                            <ul>
+                                <li><a href="#"><img src="img/Facebook.png" alt="페이스북아이콘"></a></li>
+                                <li><a href="#"><img src="img/youtube.png" alt="유튜브아이콘"></a></li>
+                                <li><a href="#"><img src="img/Instagram.png" alt="인스타그램아이콘"></a></li>
+                            </ul>
+                        </div><!-- .util end -->
+                    </div><!-- .bank end -->
+
+                    <div class="info pc_info">
+                        <strong class="info-mobile">COMPANY INFO</strong>
+                        <div>
+                            <ul>
+                                <li>㈜브리드비인터내셔널</li>
+                                <li>CEO. 김동근,김동환</li>
+                                <li>주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9<br />DS타운 4층</li>
+                                <li>사업자 등록번호 안내. [141-81-42329]</li>
+                                <li><a href="#">통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</a></li>
+                                <li>Copyright © F5NATURE. All rights reserved.</li>
+                            </ul>
+                        </div>
+                    </div><!-- .info end -->
+
+                    <div class="service pc_info">
+                        <ul>
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">AGREEMENT</a></li>
+                            <li><a href="#">PRIVACY</a></li>
+                            <li><a href="#">POLICY</a></li>
+                            <li><a href="#">GUIDE</a></li>
+                        </ul>
+                    </div><!-- .service end -->
+
+                    <div class="mobile_info">
+                        <strong class="info-mobile">COMPANY INFO</strong>
+                        <div class="mob-list_wrap">
+                            <div class="list">
+                                <ul>
+                                    <li>㈜브리드비인터내셔널</li>
+                                    <li>CEO. 김동근,김동환</li>
+                                    <li>주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9<br />DS타운 4층</li>
+                                    <li>사업자 등록번호 안내. [141-81-42329]</li>
+                                    <li><a href="#">통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</a></li>
+                                    <li>Copyright © F5NATURE. All rights reserved.</li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">COMPANY</a></li>
+                                    <li><a href="#">AGREEMENT</a></li>
+                                    <li><a href="#">PRIVACY</a></li>
+                                    <li><a href="#">POLICY</a></li>
+                                    <li><a href="#">GUIDE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- .info end -->
+                </div><!-- .footer_info end -->
+            </div><!-- .footer_inner end -->
+        </footer><!-- .footer  end -->
+
+    </div><!-- #wrap end -->
+
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    </script>
+</body>
+
+</html>
