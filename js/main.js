@@ -62,6 +62,10 @@ $(function () {
             $(this).next().slideUp();
         }
     });
+    $('.header .gnb-moblie .gnb02 .drop_menu > a').click(function(){
+        $(this).toggleClass('on');
+        
+    });
 
     cartBtn.click(function (){
         swal("장바구니에 담겼습니다!", "", "success");

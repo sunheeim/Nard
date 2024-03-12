@@ -542,7 +542,13 @@
     body {
         font-size: 50%;
     }
-
+    .header {
+        .inner {
+            .search_box {
+                top: 70px;
+            }
+        }
+    }
     .section02 {
         .inner {
             display: block;
@@ -645,6 +651,17 @@
     .kakao_btn {
         figure {
             width: 40px;
+        }
+    }
+    .header {
+        .inner {
+            .gnb-moblie {
+                width: 100%;
+                background-color: rgb(100 55 25 / 94%);
+                .close-btn {
+                    right: 47%;
+                }
+            }
         }
     }
     .section04 {

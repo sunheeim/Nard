@@ -218,6 +218,33 @@
                         border-bottom: 1px solid #ccc;
                         display: block;
                         color: white;
+                        position: relative;
+                    }
+                    .drop_menu>a {
+                        &::before {
+                            content: '';
+                            width: 15px;
+                            height: 1px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50%;
+                            right: 43px;
+                            transform: translateY(-50%);
+                        }
+                        &::after {
+                            content: '';
+                            width: 1px;
+                            height: 15px;
+                            background-color: white;
+                            position: absolute;
+                            top: 50%;
+                            right: 50px;
+                            transform: translateY(-50%);
+                            transition: all 0.5s ease;
+                        }
+                        &.on::after {
+                            transform: translateY(-50%) rotate(90deg);
+                        }
                     }
                 }
 
@@ -313,6 +340,7 @@
         }
     }
 }
+
 @keyframes marquee {
     from {
         transform: translateX(0);

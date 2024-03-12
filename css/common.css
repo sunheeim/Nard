@@ -183,6 +183,31 @@
   border-bottom: 1px solid #ccc;
   display: block;
   color: white;
+  position: relative;
+}
+.header .inner .gnb-moblie .gnb .gnb02 .drop_menu > a::before {
+  content: "";
+  width: 15px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 43px;
+  transform: translateY(-50%);
+}
+.header .inner .gnb-moblie .gnb .gnb02 .drop_menu > a::after {
+  content: "";
+  width: 1px;
+  height: 15px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+  transition: all 0.5s ease;
+}
+.header .inner .gnb-moblie .gnb .gnb02 .drop_menu > a.on::after {
+  transform: translateY(-50%) rotate(90deg);
 }
 .header .inner .gnb-moblie .gnb .depth01 .depth02 {
   display: none;

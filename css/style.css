@@ -435,6 +435,9 @@
   body {
     font-size: 50%;
   }
+  .header .inner .search_box {
+    top: 70px;
+  }
   .section02 .inner {
     display: block;
   }
@@ -503,6 +506,13 @@
 @media screen and (max-width: 640px) {
   .kakao_btn figure {
     width: 40px;
+  }
+  .header .inner .gnb-moblie {
+    width: 100%;
+    background-color: rgba(100, 55, 25, 0.94);
+  }
+  .header .inner .gnb-moblie .close-btn {
+    right: 47%;
   }
   .section04 .inner {
     max-width: 640px;
