@@ -214,7 +214,7 @@
                     .depth01>a {
                         font-size: 2.2rem;
                         height: 50px;
-                        line-height: 60px;
+                        line-height: 50px;
                         border-bottom: 1px solid #ccc;
                         display: block;
                         color: white;
@@ -265,6 +265,30 @@
                 top: 70px;
                 right: 50%;
                 transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .header {
+        .inner {
+            .gnb-moblie {
+                .gnb {
+                    .gnb02 {
+                        .drop_menu > a {
+                            
+                            &::before {
+                                width: 11px;
+                                right: 0;
+                            }
+                            &::after {
+                                height: 12px;
+                                right: 5px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -325,7 +349,7 @@
                 white-space: nowrap;
                 padding-right: 100%;
                 box-sizing: content-box;
-                animation: marquee 120s linear infinite;
+                animation: marquee 200s linear infinite;
 
                 .item {
                     display: block;
@@ -421,6 +445,17 @@
 }
 
 @media screen and (max-width:420px) {
+    .section06 {
+        .inner {
+            .marquee {
+                .marquee-cont {
+                    .item {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
     .footer {
         .footer_inner {
             .footer_info {

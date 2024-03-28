@@ -196,6 +196,10 @@
   font-family: var(--font-en);
   font-size: 1.4rem;
 }
+.section02 .inner .cont .item .btn a.on {
+  background-color: rgba(100, 55, 25, 0.445);
+  transition: all 0.5s;
+}
 
 /* ----Section03 ---- */
 .section03 .inner {
@@ -255,15 +259,18 @@
 .section03 .inner .list .item .info .btn {
   display: flex;
   justify-content: center;
-}
-.section03 .inner .list .item .info .btn a {
   border: 1px #333 solid;
   width: 170px;
   height: 48px;
   line-height: 48px;
-  display: block;
-  font-size: 1.5rem;
+  margin: 0 auto;
+  font-size: 1.4rem;
   font-family: var(--font-en);
+}
+.section03 .inner .list .item .info .btn a:hover {
+  font-weight: bold;
+  transition: all 0.5s;
+  scale: 1.1;
 }
 
 /* ----section04 ---- */
@@ -390,7 +397,7 @@
   .section03 .inner .list_wrap .list .item figure {
     height: 270px;
   }
-  .section03 .inner .list_wrap .list .item .info .btn a {
+  .section03 .inner .list_wrap .list .item .info .btn {
     width: 60%;
   }
 }

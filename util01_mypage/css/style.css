@@ -1,0 +1,119 @@
+@import url("/css/reset.css");
+@import url("/css/common.css");
+@import url("/css/common.scss");
+:root {
+  --font-en: "Caviar Dreams";
+  --font-kr: "NanumSquare";
+  --font-title: "NanumMyeongjoExtraBold";
+  --color-black: #333;
+  --color-white: #fff;
+  --max-width: 1440px;
+  --responsive-width: calc(100% - 30px);
+  --titleSize--pc-big: 3.6rem;
+  --titleSize-tablet-big: 32px;
+  --titleSize-mobile-big: 28px;
+  --textSize-basic: 20px;
+  --textSize-mobile-basic: 18px;
+}
+
+.util_main .inner {
+  max-width: 1440px;
+  width: calc(100% - 30px);
+  margin: 80px auto;
+}
+.util_main .inner h4 {
+  text-align: center;
+  font-weight: normal;
+  height: 80px;
+  line-height: 80px;
+}
+.util_main .inner .my_info {
+  display: flex;
+  gap: 40px;
+  background-color: #F4F4F4;
+  padding: 20px;
+  margin: 40px 0;
+}
+.util_main .inner .my_info figure {
+  width: 80px;
+  height: 80px;
+}
+.util_main .inner .my_info figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.util_main .inner .my_info .info_txt {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 5px;
+  position: relative;
+}
+.util_main .inner .my_info .info_txt p:nth-child(2) {
+  padding-bottom: 10px;
+}
+.util_main .inner .my_info .info_txt strong {
+  color: rgb(255, 156, 75);
+}
+.util_main .inner .my_info .info_txt::after {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #d8d8d8;
+  position: absolute;
+  top: 0;
+  left: -25px;
+}
+.util_main .inner .mile_wrap {
+  display: flex;
+  justify-content: space-between;
+  border: #d8d8d8 1px solid;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+.util_main .inner .mile_wrap .mile_inner {
+  width: calc(50% - 60px);
+}
+.util_main .inner .mile_wrap .mile_inner .mile {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  margin: 20px 0;
+  align-items: center;
+}
+.util_main .inner .mile_wrap .mile_inner .mile h6 {
+  font-size: 1.6rem;
+}
+.util_main .inner .mile_wrap .mile_inner .mile p {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.util_main .inner .mile_wrap .mile_inner .mile p a {
+  display: block;
+  width: 50px;
+  height: 30px;
+  border: #d8d8d8 1px solid;
+  line-height: 30px;
+  text-align: center;
+}
+.util_main .inner .mile_wrap .mile_inner .use_mile p {
+  padding-right: 70px;
+}
+.util_main .inner .my_order .title {
+  display: flex;
+  align-items: end;
+  gap: 10px;
+  background-color: #F4F4F4;
+  padding: 10px 20px;
+}
+.util_main .inner .my_order .title h2 {
+  font-size: 1.6rem;
+}
+.util_main .inner .my_order .title p {
+  font-size: 1.3rem;
+  color: #a5a5a5;
+}/*# sourceMappingURL=style.css.map */

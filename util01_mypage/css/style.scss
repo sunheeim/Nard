@@ -1,0 +1,133 @@
+@import url("/css/reset.css");
+@import url("/css/common.css");
+@import url("/css/common.scss");
+
+:root {
+    --font-en: 'Caviar Dreams';
+    --font-kr: 'NanumSquare';
+    --font-title: 'NanumMyeongjoExtraBold';
+
+    --color-black: #333;
+    --color-white: #fff;
+
+    --max-width: 1440px;
+    --responsive-width: calc(100% - 30px);
+
+    --titleSize--pc-big: 3.6rem;
+
+    --titleSize-tablet-big: 32px;
+    --titleSize-mobile-big: 28px;
+
+    --textSize-basic: 20px;
+    --textSize-mobile-basic: 18px;
+}
+.util_main {
+    .inner {
+        max-width: 1440px;
+        width: calc(100% - 30px);
+        margin: 80px auto;
+        h4 {
+            text-align: center;
+            font-weight: normal;
+            height: 80px;
+            line-height: 80px;
+        }
+        .my_info {
+            display: flex;
+            gap: 40px;
+            background-color: #F4F4F4;
+            padding: 20px;
+            margin: 40px 0;
+            figure {
+                width: 80px;
+                height: 80px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .info_txt {
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                row-gap: 5px;
+                position: relative;
+                p {
+                    &:nth-child(2) {
+                        padding-bottom: 10px;
+                    }
+                }
+                strong {
+                    color: rgb(255, 156, 75);
+                }
+                &::after {
+                    content: '';
+                    width: 1px;
+                    height: 100%;
+                    background-color: #d8d8d8;
+                    position: absolute;
+                    top: 0;
+                    left: -25px;
+                }
+            }
+        }
+
+        .mile_wrap {
+            display: flex;
+            justify-content: space-between;
+            border: #d8d8d8 1px solid;
+            padding: 0 20px;
+            margin-bottom: 40px;
+            .mile_inner {
+                width: calc(100% / 2 - 60px);
+                .mile {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.6rem;
+                    margin: 20px 0;
+                    align-items: center;
+                    h6 {
+                        font-size: 1.6rem;
+                    }
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 20px;
+                        a {
+                            display: block;
+                            width: 50px;
+                            height: 30px;
+                            border: #d8d8d8 1px solid;
+                            line-height: 30px;
+                            text-align: center;
+                        }
+                    }
+                }
+                .use_mile {
+                    p {
+                        padding-right: 70px;
+                    }
+                }
+            }
+        }
+
+        .my_order {
+            .title {
+                display: flex;
+                align-items: end;
+                gap: 10px;
+                background-color: #F4F4F4;
+                padding: 10px 20px;
+                h2 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1.3rem;
+                    color: #a5a5a5;
+                }
+            }
+        }
+    }
+}

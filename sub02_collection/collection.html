@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <title>SKIN CARE - Nard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.scss">
+
+    <script src="lib/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/sub02.js"></script>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <div class="inner">
+                <h1>
+                    <a href="../index.html"><img src="img/NARD_logo.png" alt="NARDlogo"></a>
+                </h1>
+                <nav class="gnb-pc pc">
+                    <ul class="gnb">
+                        <li class="depth01">
+                            <a href="#">NEW</a>
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">BEST</a>
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="../sub01_category/category.html">CATEGORY</a>
+                            <ul class="depth02">
+                                <li><a href="../sub01_category/category.html">SKIN CARE</a></li>
+                                <li><a href="../sub01_category/category.html">ORAL CARE</a></li>
+                                <li><a href="../sub01_category/category.html">HAIR</a></li>
+                                <li><a href="../sub01_category/category.html">BODY</a></li>
+                                <li><a href="../sub01_category/category.html">BABY</a></li>
+                                <li><a href="../sub01_category/category.html">LIFE STYLE</a></li>
+                            </ul><!-- .depth02 end -->
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="collection.html">COLLECTION</a>
+                            <ul class="depth02">
+                                <li><a href="collection.html">SET</a></li>
+                                <li><a href="collection.html">GIFT</a></li>
+                                <li><a href="collection.html">TRAVEL</a></li>
+                            </ul><!-- .depth02 end -->
+                        </li><!-- .depth01 end -->
+                        <li class="depth01">
+                            <a href="#">SALE</a>
+                        </li><!-- .depth01 end -->
+                    </ul><!-- .gnb end -->
+                </nav><!-- .gnb-pc end -->
+                <div class="util">
+                    <button class="user pc">
+                        <img src="img/user_icon.png" alt="마이페이지">
+                    </button><!-- .search end -->
+                    <button class="cart pc">
+                        <img src="img/bag_icon.png" alt="장바구니">
+                    </button><!-- .user end -->
+                    <button class="search">
+                        <img src="img/search_icon.png" alt="검색">
+                    </button><!-- .cart end -->
+                    <button class="menu_btn mobile">
+                        <img src="img/menu_icon.png" alt="메뉴보기">
+                    </button><!-- .mobile-btn end -->
+                </div><!-- .util end -->
+
+                <div class="search_box">
+                    <div class="search_box_inner">
+                        <input type="text" placeholder="검색어를 입력해주세요">
+                        <img src="img/icon _search_W.png" alt="검색">
+                    </div><!-- .search_box_inner end -->
+                </div><!-- .search_box end -->
+
+                <nav class="gnb-moblie moblie">
+                    <div class="gnb">
+                        <ul class="gnb01">
+                            <li class="depth01"><a href="#">LOG IN</a></li>
+                            <li class="depth01"><a href="#">JOIN</a></li>
+                            <li class="depth01"><a href="#">MY PAGE</a></li>
+                            <li class="depth01"><a href="#">MY ORDER</a></li>
+                        </ul><!-- .gnb01 end -->
+                        <ul class="gnb02">
+                            <li class="depth01">
+                                <a href="#">NEW</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">BEST</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01 drop_menu">
+                                <a href="#">CATEGORY</a>
+                                <ul class="depth02">
+                                    <li><a href="../sub01_category/category.html">SKIN CARE</a></li>
+                                    <li><a href="../sub01_category/category.html">ORAL CARE</a></li>
+                                    <li><a href="../sub01_category/category.html">HAIR</a></li>
+                                    <li><a href="../sub01_category/category.html">BODY</a></li>
+                                    <li><a href="../sub01_category/category.html">BABY</a></li>
+                                    <li><a href="../sub01_category/category.html">LIFE STYLE</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li><!-- .depth01 end -->
+                            <li class="depth01 drop_menu">
+                                <a href="#">COLLECTION</a>
+                                <ul class="depth02">
+                                    <li><a href="collection.html">SET</a></li>
+                                    <li><a href="collection.html">GIFT</a></li>
+                                    <li><a href="collection.html">TRAVEL</a></li>
+                                </ul><!-- .depth02 end -->
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">SALE</a>
+                            </li><!-- .depth01 end -->
+                        </ul><!-- .gnb02 end -->
+                    </div><!-- .gnb end -->
+                    <button class="close-btn mobile">
+                        <img src="img/icon_close.png" alt="메뉴닫기">
+                    </button><!-- .menu_btn end -->
+                </nav><!-- .gnb-moblie end -->
+            </div><!-- .inner end -->
+        </header><!-- .header end -->
+
+        <main id="main">
+            <div class="kakao_btn">
+                <figure class="btn">
+                    <a href="#">
+                        <img src="img/kakaotalkCH+.png" alt="카카오톡채널추가">
+                    </a>
+                    <a href="#">
+                        <img src="img/kakaotalk.png" alt="카카오톡상담">
+                    </a>
+                </figure><!-- .btn end -->
+            </div><!-- .kakao_btn end -->
+
+            <section class="sub02_nav">
+                <div class="inner">
+                    <div class="title">
+                        <h4>COLLECTION</h4>
+                    </div><!-- .title end -->
+                    <nav>
+                        <ul class="gnb">
+                            <li class="depth01">
+                                <a href="#">Set</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Gift</a>
+                            </li><!-- .depth01 end -->
+                            <li class="depth01">
+                                <a href="#">Travel</a>
+                            </li><!-- .depth01 end -->
+                        </ul><!-- .gnb end -->
+                    </nav>
+                </div><!-- .inner end -->
+            </section><!-- .sub02_nav end -->
+
+            <section class="sub02_page">
+                <div class="inner">
+                    <div class="list_wrap">
+                        <div class="list">
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item01.png" alt="헤어바디5종세트">
+                                        <img src="img/sub02_item01_hover.jpg" alt="헤어바디5종세트호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Travel Kit<br />
+                                        Hair Body set
+                                    </h2>
+                                    <p>나드 여행용 헤어바디 5종세트</p>
+                                    <strong>26,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item02.png" alt="핸드워시3종세트">
+                                        <img src="img/sub02_item02_hover.jpg" alt="핸드워시3종세트호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>
+                                        Hand Wash Set
+                                    </h2>
+                                    <p>나드 핸드워시 280ml 3종세트</p>
+                                    <strong>30,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item03.png" alt="핸드크림4종세트">
+                                        <img src="img/sub02_item03_hover.jpg" alt="핸드크림4종세트">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>
+                                        Hand Cream Set
+                                    </h2>
+                                    <p>나드 핸드크림 50ml 4종 세트</p>
+                                    <strong>30,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item04.png" alt="1L대용량헤어케어">
+                                        <img src="img/sub02_item04_hover.png" alt="1L대용량헤어케어호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>1L Hair Care<br />
+                                        Gift Set
+                                    </h2>
+                                    <p>나드 1L 대용량 헤어케어 선물세트</p>
+                                    <strong>52,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item05.png" alt="1L바디워시로션">
+                                        <img src="img/sub02_item05_hover.jpg" alt="1L바디워시로션호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>1L Body Lotion&Wash<br />
+                                        Gift Set
+                                    </h2>
+                                    <p>나드 바디워시 & 로션 1L 선물세트</p>
+                                    <strong>54,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item06.png" alt="바디케어라벤더머스크">
+                                        <img src="img/sub02_item06_hover.jpg" alt="바디케어라벤더머스크호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Lavender Musk<br />
+                                        Body Care Gift set
+                                    </h2>
+                                    <p>나드 바디케어 선물세트 2종 라벤더머스크 향</p>
+                                    <strong>36,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item07.png" alt="핸드케어">
+                                        <img src="img/sub02_item07_hover.jpg" alt="핸드케어호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Lavender Musk<br />
+                                        Hand Care Gift set
+                                    </h2>
+                                    <p>	나드 핸드케어 선물세트 3종 라벤더머스크 향</p>
+                                    <strong>30,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item08.png" alt="바디케어">
+                                        <img src="img/sub02_item08_hover.jpg" alt="바디케어호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Body Care<br />
+                                        Gift set
+                                    </h2>
+                                    <p>나드 바디케어 기프트세트 3종</p>
+                                    <strong>45,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item09.png" alt="세라마이드">
+                                        <img src="img/sub02_item09_hover.jpg" alt="세라마이드호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Mild Body<br />
+                                        Gift Set
+                                    </h2>
+                                    <p>나드 마일드 세라마이드 바디케어 기프트세트 2종</p>
+                                    <strong>52,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item10.png" alt="바디케어리미티드">
+                                        <img src="img/sub02_item10_hover.jpg" alt="바디케어리미티드호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Body Care<br />
+                                        Gift Set Limited Edition
+                                    </h2>
+                                    <p>	나드 바디케어 기프트세트 3종 리미티드 에디션</p>
+                                    <strong>45,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item11.png" alt="패들브러쉬">
+                                        <img src="img/sub02_item11_hover.jpg" alt="패들브러쉬호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Hair Care<br />
+                                        Paddle Brush Gift set
+                                    </h2>
+                                    <p>	나드 센시티브 헤어케어 패들 브러쉬 기프트세트</p>
+                                    <strong>64,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+
+                            <div class="item">
+                                <figure>
+                                    <a href="#">
+                                        <img src="img/sub02_item12.png" alt="바디오일세트">
+                                        <img src="img/sub02_item012_hover.jpg" alt="바디오일세트호버">
+                                    </a>
+                                </figure>
+                                <div class="info">
+                                    <h2>Nard Therapy<br />
+                                        Body Oil Gift Set
+                                    </h2>
+                                    <p>나드 테라피 바디오일&우드 괄사 선물세트</p>
+                                    <strong>58,000원</strong>
+                                    <div class="btn">
+                                        <a href="#">
+                                            ADD TO CART
+                                        </a>
+                                    </div>
+                                </div><!-- .info end -->
+                            </div><!-- .item end -->
+                        </div><!-- .list end -->
+                    </div><!-- .list_wrap end -->
+
+                </div><!-- .inner end -->
+            </section><!-- .sub02_page -->
+
+            <section class="section06">
+                <div class="inner">
+                    <div class="marquee">
+                        <div class="marquee-cont">
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                            <div class="item">
+                                <img src="img/section06_slide.png" alt="히말라야허브나드테라피">
+                            </div><!-- .item end -->
+                        </div><!-- .marquee cont -->
+                    </div><!-- .marquee end -->
+                </div><!-- .inner -->
+            </section><!-- .section06 end -->
+        </main><!-- #main end -->
+
+
+        <footer class="footer" id="footer">
+            <div class="footer_inner">
+                <figure>
+                    <img src="img/NARD_logo.png" alt="나드로고">
+                </figure>
+                <div class="footer_info">
+
+                    <div class="cs">
+                        <strong>CS CENTER</strong>
+                        <h3><a href="tel:1899-9811">1899-9811</a></h3>
+                        <ul>
+                            <li>E-MAIL : nard@grunamu.com</li>
+                            <li>평일 AM10:00~PM05:00</li>
+                            <li>점심 PM01:00~PM02:00</li>
+                            <li>토/일/공휴일 휴무</li>
+                        </ul>
+                    </div><!-- .cs end -->
+
+                    <div class="bank">
+                        <strong>BANK INFO</strong>
+                        <ul>
+                            <li>신한은행 100-031-009385</li>
+                            <li>예금주. (주)브리드비인터내셔널</li>
+                        </ul>
+                        <div class="util">
+                            <ul>
+                                <li><a href="#"><img src="img/Facebook.png" alt="페이스북아이콘"></a></li>
+                                <li><a href="#"><img src="img/youtube.png" alt="유튜브아이콘"></a></li>
+                                <li><a href="#"><img src="img/Instagram.png" alt="인스타그램아이콘"></a></li>
+                            </ul>
+                        </div><!-- .util end -->
+                    </div><!-- .bank end -->
+
+                    <div class="info pc_info">
+                        <strong class="info-mobile">COMPANY INFO</strong>
+                        <div>
+                            <ul>
+                                <li>㈜브리드비인터내셔널</li>
+                                <li>CEO. 김동근,김동환</li>
+                                <li>주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9<br />DS타운 4층</li>
+                                <li>사업자 등록번호 안내. [141-81-42329]</li>
+                                <li><a href="#">통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</a></li>
+                                <li>Copyright © F5NATURE. All rights reserved.</li>
+                            </ul>
+                        </div>
+                    </div><!-- .info end -->
+
+                    <div class="service pc_info">
+                        <ul>
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">AGREEMENT</a></li>
+                            <li><a href="#">PRIVACY</a></li>
+                            <li><a href="#">POLICY</a></li>
+                            <li><a href="#">GUIDE</a></li>
+                        </ul>
+                    </div><!-- .service end -->
+
+                    <div class="mobile_info">
+                        <strong class="info-mobile">COMPANY INFO</strong>
+                        <div class="mob-list_wrap">
+                            <div class="list">
+                                <ul>
+                                    <li>㈜브리드비인터내셔널</li>
+                                    <li>CEO. 김동근,김동환</li>
+                                    <li>주소. 대구광역시 달성군 다사읍 달구벌대로174길 10-9<br />DS타운 4층</li>
+                                    <li>사업자 등록번호 안내. [141-81-42329]</li>
+                                    <li><a href="#">통신판매업 신고. 제 2015-대구달성-0045 호[사업자정보확인]</a></li>
+                                    <li>Copyright © F5NATURE. All rights reserved.</li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">COMPANY</a></li>
+                                    <li><a href="#">AGREEMENT</a></li>
+                                    <li><a href="#">PRIVACY</a></li>
+                                    <li><a href="#">POLICY</a></li>
+                                    <li><a href="#">GUIDE</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div><!-- .info end -->
+                </div><!-- .footer_info end -->
+            </div><!-- .footer_inner end -->
+        </footer><!-- .footer  end -->
+
+    </div><!-- #wrap end -->
+
+</body>
+
+</html>

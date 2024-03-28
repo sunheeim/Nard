@@ -231,6 +231,11 @@
                         line-height: 52px;
                         font-family: var(--font-en);
                         font-size: 1.4rem;
+
+                        &.on {
+                            background-color: rgba(100, 55, 25, 0.445);
+                            transition: all 0.5s;
+                        }
                     }
                 }
             }
@@ -305,15 +310,20 @@
                     .btn {
                         display: flex;
                         justify-content: center;
+                        border: 1px #333 solid;
+                        width: 170px;
+                        height: 48px;
+                        line-height: 48px;
+                        margin: 0 auto;
+                        font-size: 1.4rem;
+                        font-family: var(--font-en);
 
                         a {
-                            border: 1px #333 solid;
-                            width: 170px;
-                            height: 48px;
-                            line-height: 48px;
-                            display: block;
-                            font-size: 1.5rem;
-                            font-family: var(--font-en);
+                            &:hover {
+                                font-weight: bold;
+                                transition: all 0.5s;
+                                scale: 1.1;
+                            }
                         }
                     }
 
@@ -475,7 +485,7 @@
                         }
 
                         .info {
-                            .btn a {
+                            .btn {
                                 width: 60%;
                             }
                         }
@@ -542,6 +552,7 @@
     body {
         font-size: 50%;
     }
+
     .header {
         .inner {
             .search_box {
@@ -549,6 +560,7 @@
             }
         }
     }
+
     .section02 {
         .inner {
             display: block;
@@ -653,17 +665,20 @@
             width: 40px;
         }
     }
+
     .header {
         .inner {
             .gnb-moblie {
                 width: 100%;
                 background-color: rgb(100 55 25 / 94%);
+
                 .close-btn {
                     right: 47%;
                 }
             }
         }
     }
+
     .section04 {
         .inner {
             max-width: 640px;
@@ -697,6 +712,7 @@
                     figure {
                         width: 100%;
                         height: 100vw;
+
                         img {
                             width: 100%;
                             height: 100%;
@@ -707,6 +723,7 @@
             }
         }
     }
+
     .section05 {
         .inner {
             .mob_title {
@@ -714,6 +731,7 @@
                     font-size: 16px;
                 }
             }
+
             .item {
                 strong {
                     font-size: 14px;
@@ -727,6 +745,7 @@
     .mobile {
         display: block;
     }
+
     .kakao_btn {
         figure {
             width: 30px;
@@ -744,6 +763,7 @@
             }
         }
     }
+
     h5 {
         font-size: 50px;
     }
@@ -757,6 +777,7 @@
             }
         }
     }
+
     .section05 {
         .inner {
             .mob_title {
@@ -764,22 +785,26 @@
                     font-size: 15px;
                 }
             }
+
             .item {
                 figure {
                     width: 280px;
                     height: 280px;
                 }
+
                 strong {
                     font-size: 12px;
                 }
             }
         }
     }
+
     .section06 {
         .inner {
             .sec06_pc {
                 display: none;
             }
+
             figure {
                 height: 71.42vw;
             }
@@ -789,9 +814,10 @@
 }
 
 @media screen and (max-width:370px) {
+
     html,
     body {
         font-size: 37.50%;
     }
-    
+
 }

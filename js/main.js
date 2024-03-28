@@ -78,6 +78,14 @@ $(function () {
     $('.section02 .cont').mouseleave(function () {
         $('.section02 .cont .item').removeClass('on');
     });
+    /* btn hover--- */
+    $('.section02 .cont .item .btn a').mouseenter(function () {
+        $('.section02 .cont .item .btn a').removeClass('on');
+        $(this).addClass('on');
+    });
+    $('.section02 .cont .item .btn a').mouseleave(function () {
+        $('.section02 .cont .item .btn a').removeClass('on');
+    });
 
     /* section04 moblie */
     $('.section04 .inner .list_mobile figure:nth-child(1) img').click(function () {
@@ -90,6 +98,12 @@ $(function () {
     $('.footer .info-mobile').click(function () {
         $(this).next().toggle();
     });
+
+    if($(window).width() < 1050) {
+        $('a').click(function (e) {
+            e.preventDefault();
+        });
+    }
 });
 
 

@@ -179,7 +179,7 @@
 .header .inner .gnb-moblie .gnb .gnb02 .depth01 > a {
   font-size: 2.2rem;
   height: 50px;
-  line-height: 60px;
+  line-height: 50px;
   border-bottom: 1px solid #ccc;
   display: block;
   color: white;
@@ -223,6 +223,16 @@
   transform: translateY(-50%);
 }
 
+@media screen and (max-width: 1200px) {
+  .header .inner .gnb-moblie .gnb .gnb02 .drop_menu > a::before {
+    width: 11px;
+    right: 0;
+  }
+  .header .inner .gnb-moblie .gnb .gnb02 .drop_menu > a::after {
+    height: 12px;
+    right: 5px;
+  }
+}
 @media screen and (max-width: 1024px) {
   .header {
     display: flex;
@@ -270,7 +280,7 @@
   white-space: nowrap;
   padding-right: 100%;
   box-sizing: content-box;
-  animation: marquee 120s linear infinite;
+  animation: marquee 200s linear infinite;
 }
 .section06 .inner .marquee .marquee-cont .item {
   display: block;
@@ -346,6 +356,9 @@
 }
 
 @media screen and (max-width: 420px) {
+  .section06 .inner .marquee .marquee-cont .item {
+    width: 200px;
+  }
   .footer .footer_inner .footer_info {
     padding-right: 80px;
   }
